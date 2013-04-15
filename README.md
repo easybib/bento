@@ -8,7 +8,38 @@ These basebox definitions are originally based on
 [work done by Tim Dysinger](https://github.com/dysinger/basebox) to
 make "Don't Repeat Yourself" (DRY) modular baseboxes. Thanks Tim!
 
-The following baseboxes are publicly available and were built using this project.
+## Current Baseboxes
+
+The following baseboxes are publicly available and were built using
+this project, and Chef 11.2.0. Future releases of Chef and baseboxes
+will follow the naming convention used here:
+
+    opscode_PLATFORM-VERSION_chef-VERSION.box
+
+And located in the opscode-vm S3 bucket's vagrant directory as linked
+below.
+
+* [opscode-centos-5.8](https://opscode-vm.s3.amazonaws.com/vagrant/opscode_centos-5.8_chef-11.2.0.box)
+* [opscode-centos-6.3](https://opscode-vm.s3.amazonaws.com/vagrant/opscode_centos-6.3_chef-11.2.0.box)
+* [opscode-ubuntu-10.04](https://opscode-vm.s3.amazonaws.com/vagrant/opscode_ubuntu-10.04_chef-11.2.0.box)
+* [opscode-ubuntu-12.04](https://opscode-vm.s3.amazonaws.com/vagrant/opscode_ubuntu-12.04_chef-11.2.0.box)
+
+At this time, 32 bit boxes have not yet been built with Chef 11.2.0.
+
+## Older Baseboxes
+
+The following base boxes were built with Chef 10.18.2.
+
+* [opscode-centos-5.8-i386](https://opscode-vm.s3.amazonaws.com/vagrant/opscode_centos-5.8-i386_chef-10.18.2.box)
+* [opscode-centos-5.8](https://opscode-vm.s3.amazonaws.com/vagrant/opscode_centos-5.8_chef-10.18.2.box)
+* [opscode-centos-6.3-i386](https://opscode-vm.s3.amazonaws.com/vagrant/opscode_centos-6.3-i386_chef-10.18.2.box)
+* [opscode-centos-6.3](https://opscode-vm.s3.amazonaws.com/vagrant/opscode_centos-6.3_chef-10.18.2.box)
+* [opscode-ubuntu-10.04-i386](https://opscode-vm.s3.amazonaws.com/vagrant/opscode_ubuntu-10.04-i386_chef-10.18.2.box)
+* [opscode-ubuntu-10.04](https://opscode-vm.s3.amazonaws.com/vagrant/opscode_ubuntu-10.04_chef-10.18.2.box)
+* [opscode-ubuntu-12.04-i386](https://opscode-vm.s3.amazonaws.com/vagrant/opscode_ubuntu-12.04-i386_chef-10.18.2.box)
+* [opscode-ubuntu-12.04](https://opscode-vm.s3.amazonaws.com/vagrant/opscode_ubuntu-12.04_chef-10.18.2.box)
+
+The following base boxes were built with Chef 10.14.4.
 
 * [opscode-centos-5.8-i386](https://opscode-vm.s3.amazonaws.com/vagrant/boxes/opscode-centos-5.8-i386.box)
 * [opscode-centos-5.8](https://opscode-vm.s3.amazonaws.com/vagrant/boxes/opscode-centos-5.8.box)
@@ -96,6 +127,14 @@ filename, its source URL, and the MD5 checksum of the file.
 * `sudoers.sh`: Customization for `/etc/sudoers`
 * `update.sh`: Ensures that the OS installation is updated
 
+## Windows
+
+* `install-chef.bat`: Installs Chef and Ruby with
+  [Opscode's full stack installer](http://opscode.com/chef/install)
+* `oracle-cert.cer`: Needed for automated install via install-vbox.bat
+* `install-vbox.bat`: Installs VirtualBox Guest Additions
+* `mount-validation.bat`: Mounts the validation drive
+
 Bugs and Issues
 ===============
 
@@ -115,6 +154,7 @@ License and Authors
 - Author:: Stephen Delano (<stephen@opscode.com>)
 - Author:: Joshua Timberman (<joshua@opscode.com>)
 - Author:: Tim Dysinger (<tim@dysinger.net>)
+- Author:: Chris McClimans (<chris@hippiehacker.org>)
 
 Copyright:: 2012, Opscode, Inc (<legal@opscode.com>)
 Copyright:: 2011-2012, Tim Dysinger (<tim@dysinger.net>)

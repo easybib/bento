@@ -1,6 +1,7 @@
 source :rubygems
 
-gem "vagrant", "~> 1.0.3"
-gem "veewee", ">= 0.3.0.alpha"
+gem "vagrant", "~> 1.0"
+gem "veewee", "~> 0.3.7"
+gem "em-winrm" # for windows!
 gem "rake"
 gem "json"

@@ -140,6 +140,7 @@ PLATFORMS
 
 DEPENDENCIES
   em-winrm
+  json
   rake
-  vagrant (~> 1.0.5)
-  veewee (>= 0.3.7)
+  vagrant (~> 1.0)
+  veewee (~> 0.3.7)

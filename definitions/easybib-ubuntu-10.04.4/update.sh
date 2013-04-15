@@ -11,6 +11,7 @@ EOF
 
 apt-get update
 apt-get -y upgrade
+apt-get -y dist-upgrade
 
 # ensure the correct kernel headers are installed
 apt-get -y install linux-headers-$(uname -r)
